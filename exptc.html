@@ -91,7 +91,19 @@ This is a template code for online experiments.
                       ["dax", "images/dax.png", "images/wode.png"], ["blicket", "images/blicket.png", "images/moke.png"]];
     var recall_conditions = ["heek", "heek", "heek", "heek", "heek", "heek",
                               "toop", "toop", "toop", "toop", "toop", "toop"];
-    var passive_conditions = [["moke", "images/moke.png", "images/wode.png"],
+    var passive_conditions = [["heek", "images/heek.png", "images/moke.png"],
+                              ["heek", "images/heek.png", "images/wode.png"],
+                              ["heek", "images/heek.png", "images/dax.png"],
+                              ["heek", "images/heek.png", "images/blicket.png"],
+                              ["heek", "images/heek.png", "images/toop.png"],
+                              ["heek", "images/heek.png", "images/filler2.png"],
+                              ["toop", "images/toop.png", "images/moke.png"],
+                              ["toop", "images/toop.png", "images/wode.png"],
+                              ["toop", "images/toop.png", "images/dax.png"],
+                              ["toop", "images/toop.png", "images/blicket.png"],
+                              ["toop", "images/toop.png", "images/filler1.png"],
+                              ["toop", "images/toop.png", "images/heek.png"],
+                              ["moke", "images/moke.png", "images/wode.png"],
                               ["moke", "images/moke.png", "images/blicket.png"],
                               ["moke", "images/moke.png", "images/heek.png"],
                               ["moke", "images/moke.png", "images/toop.png"],
@@ -370,10 +382,10 @@ This is a template code for online experiments.
       shuffle(test_images);
       timeline.push(passive_trial(i, passive_conditions[i][0], test_images[0], test_images[1]));
 
-      if (i%3==0){
-        timeline.push(recall_trial(i, recall_conditions[which_recall]));
-        which_recall += 1;
-      }
+      <!--if (i%3==0){-->
+        <!--timeline.push(recall_trial(i, recall_conditions[which_recall]));-->
+        <!--which_recall += 1;-->
+      <!--}-->
 
     }
 
